@@ -1,4 +1,4 @@
-CREATE TABLE Filiere
+CREATE TABLE Filieres
 (
 ID AUTOINCREMENT PRIMARY KEY,
 Titre varchar(255),
@@ -6,7 +6,7 @@ Code varchar(255),
 Description varchar(255)
 );
 
-CREATE TABLE Groupe
+CREATE TABLE Groupes
 (
 ID AUTOINCREMENT PRIMARY KEY,
 Nom varchar(255),
@@ -17,7 +17,7 @@ CONSTRAINT fk_Groupe FOREIGN KEY (IdFiliere)
 REFERENCES Filiere(ID)
 );
 
-CREATE TABLE Stagiaire
+CREATE TABLE Stagiaires
 (
 ID AUTOINCREMENT PRIMARY KEY,
 Nom varchar(255),
